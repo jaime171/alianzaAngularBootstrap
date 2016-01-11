@@ -1,0 +1,45 @@
+footer{
+	background-color: #242D33;
+	img {
+		margin-top: 48px !important;
+	}
+	h5 {
+		border-bottom: solid 3px white;
+		color: white;
+		text-transform: uppercase;
+	}
+	ul {
+	  padding: 0;	
+	}
+	li {
+		border-bottom: solid 1px white;
+		padding: 1px;
+		text-transform: capitalize;
+		:after {
+			content: ">";
+      font-size: 1.5em;
+      margin-right: 15px;
+      margin-top: -7px;
+      position: absolute;
+      right: 0;
+		}
+	  a {
+	  	color: white;
+	  }
+	}
+	p {
+		color: white;
+		margin: 0;
+	}
+  div:nth-child(5) a {
+    line-height: 60px;
+  }
+  span {
+    background-color: #182125;
+    height: 30px;
+    display: block;
+  }
+}
+
+
+

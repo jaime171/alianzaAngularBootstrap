@@ -1,0 +1,51 @@
+.jumbotron {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-inner {
+  height: 80vh;
+}
+
+.fade-carousel {
+  height: 80vh;
+  .slides .slides-size {
+    height: 80%;
+  }
+}
+
+.hero img {
+  width: 280px;
+}
+
+
+
+@media screen and (min-width: 768px){
+  .navbar {
+    background-color: rgba(255,255,255,0);
+  }
+  .hero img {
+    width: initial;
+    margin-top: -100px;
+  }
+}
+
+/* === Home hero bg === */
+
+.fade-carousel .slides-main .slide-1 {
+  background-image: url(/images/bg-slider-1.jpg); 
+}
+.fade-carousel .slides-main .slide-2 {
+  background-image: url(/images/bg-slider-2.jpg); 
+}
+.fade-carousel .slides-main .slide-3 {
+  background-image: url(/images/bg-slider-3.jpg); 
+}
+
+
+
+/* === Services hero bg === */
+
+.fade-carousel .slides-services .slide-1 {
+  background-image: url(/images/bg-slider-services.jpg); 
+}
