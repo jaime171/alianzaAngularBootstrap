@@ -21,7 +21,7 @@ angular
       })
       .when('/services', {
         templateUrl: 'views/services.html',
-        controller: 'AboutCtrl',
+        controller: 'ServicesCtrl',
         controllerAs: 'services'
       })
       .otherwise({
