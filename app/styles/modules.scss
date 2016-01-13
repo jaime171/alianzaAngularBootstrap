@@ -1,5 +1,5 @@
 $bg-fullWidth: #DFDFDF;
-
+$bg-customBlue: #182125;
 .container {
   font-family: 'Raleway', sans-serif;
   p {
@@ -7,16 +7,9 @@ $bg-fullWidth: #DFDFDF;
   }
 }
 
-h2 {
-  text-transform: uppercase;
-  font-weight: bolder;
-  margin-bottom: 20px;
-}
-
-h4 {
-  font-size: 15px;
-  font-weight: bolder;
-  padding: 10px;
+.full-width-blue {
+	background-color: $bg-customBlue;
+	padding: 30px 0;
 }
 
 .full-width {
@@ -50,6 +43,10 @@ h4 {
 	max-width: 900px;
 	margin: 0 auto;
 }
+
+
+
+
 
 .toggleColor {
   background-color: black;

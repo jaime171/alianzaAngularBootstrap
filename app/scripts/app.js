@@ -21,8 +21,25 @@ angular
       })
       .when('/services', {
         templateUrl: 'views/services.html',
-        controller: 'ServicesCtrl',
+        controller: 'MainCtrl',
         controllerAs: 'services'
+      })
+      .when('/infrastructure', {
+        templateUrl: 'views/infrastructure.html',
+        controller: 'MainCtrl',
+      })
+      .when('/location', {
+      	templateUrl: 'views/location.html',
+      	controller: 'MainCtrl',
+      })
+      .when('/masterplan', {
+      	templateUrl: 'views/masterplan.html',
+      	controller: 'MainCtrl',
+      })
+      .when('/contact', {
+      	templateUrl: 'views/contact.html',
+      	controller: 'MainCtrl',
+      	controllerAs: 'contact'
       })
       .otherwise({
         redirectTo: '/'
