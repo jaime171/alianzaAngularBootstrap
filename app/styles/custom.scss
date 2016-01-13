@@ -61,7 +61,10 @@
 .contact-container {
   background-image: url(/images/bg-slider-1.jpg); 
   height: 700px;
-  widows: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   h2 {
   	color: white;
   }
