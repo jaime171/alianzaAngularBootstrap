@@ -2,9 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Alianza Industrial Park</title>
+    <meta name="description" content="Alianza Industrial Park is located at Derramadero Saltillo's Industrial Zone, Our company is committed to the development of Industrial Parks, design, construction sale or rent of industrial lots and buildings.">
+    <meta name="keywords" content="mexico, alianza, industrial park, saltillo, derramadero"/>
+    <meta name="author" content="Jaime Simental">
     <meta name="viewport" content="width=device-width">
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta property="og:title" content="Alianza Industrial Park"/>
+    <meta property="og:description" content="Alianza Industrial Park, Derramadero Coahuila."/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
@@ -14,6 +20,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link type="text/plain" rel="author" href="humans.txt"/> 
   </head>
   <body ng-app="alianzaV2App">
     <!--[if lte IE 8]>
@@ -30,7 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#/"><img src="images/nav-logo.png" alt="Alianza Saltillo logo"></a>
+          <a class="navbar-brand" href="#/"><img src="images/nav-logo.png" alt="Alianza Industrial Park Saltillo logo" width="190"></a>
         </div>
         <div class="collapse navbar-collapse" id="js-navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -52,20 +59,20 @@
       <div class="row container-full">
         <div class="col-xs-12 col-sm-0 col-md-1"></div>
         <div class="col-xs-12 col-sm-3 col-md-2">
-    	    <img draggable="false" src="images/logo-derramadero.png" alt="">
+    	    <img draggable="false" src="images/logo-derramadero.png" alt="Derramadero Coahuila Logo">
         </div> 	
         <div class="col-xs-12 col-sm-3 col-md-3 custom-link">
-    	    <a href=""><h5>available buildings</h5></a>
-    	    <a href=""><h5>available lots</h5></a>
+    	    <a href="#/masterplan/#south"><h5>available buildings</h5></a>
+    	    <a href="#/masterplan/#north"><h5>available lots</h5></a>
         </div>
         <div class="col-xs-12 col-sm-3 col-md-3">
     	    <h5>navigation</h5>
     	    <ul>
-    	      <li><a href="">services</a></li>
-    	      <li><a href="">infrastructure</a></li>
-    	      <li><a href="">location map</a></li>
-    	      <li><a href="">master plan</a></li>
-    	      <li><a href="">contact</a></li>
+            <li><a ng-href="#/services">services</a></li>
+            <li><a ng-href="#/infrastructure">infrastructure</a></li>
+            <li><a ng-href="#/location">location map</a></li>
+			      <li><a ng-href="#/masterplan">master plan</a></li>
+			      <li><a ng-href="#/contact">contact</a></li>
     	    </ul>        
         </div>
         <div class="col-xs-12 col-sm-2 col-md-2">
@@ -91,7 +98,7 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

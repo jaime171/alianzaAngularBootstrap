@@ -62,7 +62,11 @@ h1 {
 }
 
 
+/* === Location hero bg === */
 
+.fade-carousel .slides-location .slide-1 {
+  background-image: url(/images/bg-slider-location.jpg); 
+}
 
 
 /* === Master Plan hero bg === */
@@ -70,3 +74,5 @@ h1 {
 .fade-carousel .slides-master .slide-1 {
   background-image: url(/images/bg-slider-master.jpg); 
 }
+
+

@@ -15,17 +15,6 @@ Image credits: unsplash.com
 .fade-carousel .carousel-inner .item {
     height: 100vh;
 }
-.fade-carousel .carousel-indicators > li {
-    margin: 0 2px;
-    background-color: #f39c12;
-    border-color: #f39c12;
-    opacity: .7;
-}
-.fade-carousel .carousel-indicators > li.active {
-  width: 10px;
-  height: 10px;
-  opacity: 1;
-}
 
 /********************************/
 /*          Hero Headers        */
@@ -81,19 +70,6 @@ Image credits: unsplash.com
     opacity: .7;
 }
 
-/********************************/
-/*          Custom Buttons      */
-/********************************/
-.btn.btn-lg {padding: 10px 40px;}
-.btn.btn-hero,
-.btn.btn-hero:hover,
-.btn.btn-hero:focus {
-    color: #f5f5f5;
-    background-color: #1abc9c;
-    border-color: #1abc9c;
-    outline: none;
-    margin: 20px auto;
-}
 
 /********************************/
 /*       Slides backgrounds     */

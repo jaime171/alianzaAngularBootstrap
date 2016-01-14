@@ -51,7 +51,7 @@ angular.module('alianzaV2App')
   }
   downImg.onload = function(){
     loadImages();
-    setInterval( loadImages, 10000);
+    setInterval( loadImages, 6000);
   };
   downImg.src = '/images/gallery-1.jpg';
 });

@@ -1,5 +1,6 @@
 $bg-fullWidth: #DFDFDF;
 $bg-customBlue: #182125;
+$white: white;
 .container {
   font-family: 'Raleway', sans-serif;
   p {
@@ -55,4 +56,29 @@ $bg-customBlue: #182125;
   -o-transition: background-color 400ms linear;
   -ms-transition: background-color 400ms linear;
   transition: background-color 400ms linear;
+}
+
+
+.white {
+	color: $white;
+}
+
+
+
+
+.title-modal {
+  font-size: 35px !important;
+  margin: 0;
+}
+.title-section {
+	font-size: 30px !important;
+  margin: 0;
+}
+@media only screen and (min-width : 480px) {  
+  .title-modal {
+   	font-size: 51px !important;
+  }
+  .title-section {
+  	font-size: 35px !important;
+  }
 }

@@ -21,20 +21,19 @@ angular
       })
       .when('/services', {
         templateUrl: 'views/services.html',
-        controller: 'MainCtrl',
-        controllerAs: 'services'
+        controller: 'MainCtrl'
       })
       .when('/infrastructure', {
         templateUrl: 'views/infrastructure.html',
-        controller: 'MainCtrl',
+        controller: 'MainCtrl'
       })
       .when('/location', {
       	templateUrl: 'views/location.html',
-      	controller: 'MainCtrl',
+      	controller: 'MainCtrl'
       })
       .when('/masterplan', {
       	templateUrl: 'views/masterplan.html',
-      	controller: 'MainCtrl',
+      	controller: 'MainCtrl'
       })
       .when('/contact', {
       	templateUrl: 'views/contact.html',
