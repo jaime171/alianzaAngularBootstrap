@@ -77,7 +77,6 @@
 .infra-container {
 	h4 {
 		font-size: 19px;
-		padding: 50px 150px;
 	}
 	span {
 		font-size: 12px;
@@ -85,6 +84,14 @@
 	p {
 		font-weight: bolder;
 		padding: 10px 0;
+	}
+}
+
+@media screen and (min-width: 768px){
+  .infra-container {
+	  h4 {
+		  padding: 50px 150px;
+	  }
 	}
 }
 

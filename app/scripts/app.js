@@ -40,7 +40,9 @@ angular
       	controller: 'MainCtrl',
       	controllerAs: 'contact'
       })
-      .otherwise({
-        redirectTo: '/'
+      .when('/404', {
+        templateUrl: '/404.html',
+      }).otherwise({
+        redirectTo: '/404'
       });
   });

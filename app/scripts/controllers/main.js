@@ -9,7 +9,10 @@
 angular.module('alianzaV2App')
   .controller('MainCtrl', function () {
   	
-
+    $('.menu-toggle').on('click', function(){
+      $('.navbar-collapse').removeClass('in') 
+    });
+    
   	window.onscroll = function(){
 		  var trigger = $('.jumbotron').height() - 150,
 		  comparation,
