@@ -82,7 +82,6 @@
 		font-size: 12px;
 	}
 	p {
-		font-weight: bolder;
 		padding: 10px 0;
 	}
 }
@@ -263,4 +262,44 @@ input:-moz-placeholder {font-weight: bolder;  font-family: 'Raleway', sans-serif
 	span {
 		float: right;
 	}
+}
+
+
+
+// Last changes
+
+.custom-margin {
+	margin-bottom: 35px;
+}
+
+#mail-link {
+	font-size: 	19px;
+}
+
+.corridors {
+	width: 100%;
+	height: auto;
+}
+
+
+.hero img {
+  width: 225px;
+}
+
+@media screen and (min-width: 768px){
+  .services-container {
+  	.custom-services {
+  		div:not(:last-child) p {
+  			margin-top: 35px;
+  		}
+  	}
+  }
+  footer {
+  	ul {
+  		margin-top: 40px;
+  	}
+  }  
+  .hero img {
+   width: 450px;
+  }
 }

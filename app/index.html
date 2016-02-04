@@ -11,7 +11,7 @@
     <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
     <meta property="og:title" content="Alianza Industrial Park"/>
     <meta property="og:description" content="Alianza Industrial Park, Derramadero Coahuila."/>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500,700' rel='stylesheet' type='text/css'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -37,79 +37,77 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#/"><img src="images/nav-logo.png" alt="Alianza Industrial Park Saltillo logo" width="190"></a>
+          <a class="navbar-brand" id="refresh" onclick="scroll(0,0)" href="/#/"><img src="images/nav-logo.png" alt="Alianza Industrial Park Saltillo logo" width="190"></a>
         </div>
         <div class="collapse navbar-collapse" id="js-navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="menu-toggle" ng-href="#/services">services</a></li>
-            <li><a class="menu-toggle" ng-href="#/infrastructure">infrastructure</a></li>
-            <li><a class="menu-toggle" ng-href="#/location">location map</a></li>
-			      <li><a class="menu-toggle" ng-href="#/masterplan">master plan</a></li>
-			      <li><a class="menu-toggle" ng-href="#/contact">contact</a></li>
+            <li><a class="menu-toggle" onclick="scroll(0,0)" ng-href="#/services">services</a></li>
+            <li><a class="menu-toggle" onclick="scroll(0,0)" ng-href="#/infrastructure">infrastructure</a></li>
+            <li><a class="menu-toggle" onclick="scroll(0,0)" ng-href="#/location">location</a></li>
+			      <li><a class="menu-toggle" onclick="scroll(0,0)" ng-href="#/masterplan">master plan</a></li>
+			      <li><a class="menu-toggle" onclick="scroll(0,0)" ng-href="#/contact">contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
+    
     <div>
-       <div ng-view=""></div>
+      <div ng-view=""></div>
     </div>
 
-    <footer class="footer">
-      <div class="row container-full">
-        <div class="col-xs-12 col-sm-0 col-md-1"></div>
-        <div class="col-xs-12 col-sm-3 col-md-2">
-    	    <img draggable="false" src="images/logo-derramadero.png" alt="Derramadero Coahuila Logo">
-        </div> 	
-        <div class="col-xs-12 col-sm-3 col-md-3 custom-link">
-    	    <a ng-href="#/masterplan/#south"><h5>available buildings</h5></a>
-    	    <a ng-href="#/masterplan/#north"><h5>available lots</h5></a>
-        </div>
-        <div class="col-xs-12 col-sm-3 col-md-3">
-    	    <h5>navigation</h5>
-    	    <ul>
-            <li><a ng-href="#/services">services</a></li>
-            <li><a ng-href="#/infrastructure">infrastructure</a></li>
-            <li><a ng-href="#/location">location map</a></li>
-			      <li><a ng-href="#/masterplan">master plan</a></li>
-			      <li><a ng-href="#/contact">contact</a></li>
-    	    </ul>        
-        </div>
-        <div class="col-xs-12 col-sm-2 col-md-2">
-    	    <h5>located</h5> 
-    	    <p>Perif. Luis Echeverría Álvarez 443</p>
-    	    <p>TORREELIT Piso 10</p>
-    	    <p>Col República Poniente</p>
-    	    <p>Saltillo, Coahuila, México, 25265</p>
-    	    <a href="#">info@alianzamx.com</a>
-        </div>
-      </div>
-      <span></span>
-    </footer>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+	    <footer class="footer">
+	      <div class="row container-full">
+	        <div class="col-xs-12 col-sm-0 col-md-1"></div>
+	        <div class="col-xs-12 col-sm-3 col-md-2">
+	    	    <img draggable="false" src="images/logo-derramadero.png" alt="Derramadero Coahuila Logo">
+	        </div> 	
+	        <div class="col-xs-12 col-sm-3 col-md-3 custom-link">
+	    	    <a ng-href="#/masterplan/#north"><h5 style="margin-top: 40px; border-bottom: none">available lots/buildings</h5></a>
+	        </div>
+	        <div class="col-xs-12 col-sm-3 col-md-3">
+	    	    <ul>
+	            <li><a onclick="scroll(0,0)" ng-href="#/services">services</a></li>
+	            <li><a onclick="scroll(0,0)" ng-href="#/infrastructure">infrastructure</a></li>
+	            <li><a onclick="scroll(0,0)" ng-href="#/location">location</a></li>
+				      <li><a onclick="scroll(0,0)" ng-href="#/masterplan">master plan</a></li>
+				      <li><a onclick="scroll(0,0)" ng-href="#/contact">contact</a></li>
+	    	    </ul>        
+	        </div>
+	        <div class="col-xs-12 col-sm-2 col-md-2">
+	    	    <h5>corporate offices</h5> 
+	    	    <p>Perif. Luis Echeverría Álvarez 443</p>
+	    	    <p>TORREELIT Piso 10</p>
+	    	    <p>Col República Poniente</p>
+	    	    <p>Saltillo, Coahuila, México, 25265</p>
+	    	    <a id="mail-link" href="mailto:info@alianzamx.com">info@alianzamx.com</a>
+	        </div>
+	      </div>
+	      <span></span>
+	    </footer>
+	    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+	    
+	    <!-- build:js(.) scripts/vendor.js -->
+	    <!-- bower:js -->
+	    <script src="bower_components/angular/angular.js"></script>
+	    <script class="reloadMe" src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+	    <script src="bower_components/angular-route/angular-route.js"></script>
+	    <!-- endbower -->
+	    <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/services.js"></script>
-        <!-- endbuild -->
+	        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+	        <script src="scripts/app.js"></script>
+	        <script src="scripts/controllers/main.js"></script>
+	        <script src="scripts/controllers/infra.js"></script>
+	        <!-- endbuild -->
 
-</body>
-</html>
+	</body>
+	</html>
 
 
-    <!-- "bootstrap": {
-      "main": [
-        "less/bootstrap.less",
-        "dist/css/bootstrap.css",
-        "dist/js/bootstrap.js"
-      ]
-    } -->
+<!-- 	    "bootstrap": {
+	      "main": [
+	        "less/bootstrap.less",
+	        "dist/css/bootstrap.css",
+	        "dist/js/bootstrap.js"
+	      ]
+	    } -->

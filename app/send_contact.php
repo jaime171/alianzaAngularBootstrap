@@ -1,12 +1,11 @@
 <?php
-$nombre = $_POST['name'];
+$name = $_POST['name'];
 $company = $_POST['company'];
-$correo = $_POST['email'];
-$phone = $_POST['phone'];
+$email = $_POST['email'];
 $message = $_POST['message'];
-
-
-$mail_send = mail('jaimesalvador.simental@gmail.com','AgendarCita_Doctor_Charles', "Nombre: $nombre\r\nTelefono: $telefono\r\nCorreo: $correo\r\nCita: $cita");
+$phone = $_POST['phone'];
+$email_to = "amariyoideas@gmail.com"
+$mail_send = mail($email_to,'Alianza Web Site Contact', "Name: $name\r\nCompany: $company\r\nPhone: $phone\r\nEmail: $email\r\nMessage: $message");
 
 if($mail_send){
 	header("Location: /send_mail/correcto.html");

@@ -41,7 +41,6 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jscs:all'],
         options: {
           livereload: '<%= connect.options.livereload %>'
         }
@@ -120,21 +119,6 @@ module.exports = function (grunt) {
     
 
     // Make sure code styles are up to par
-    jscs: {
-      options: {
-        config: '.jscsrc',
-        verbose: true
-      },
-      all: {
-        src: [
-          'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
-        ]
-      },
-      test: {
-        src: ['test/spec/{,*/}*.js']
-      }
-    },
 
     // Empties folders to start fresh
     clean: {
@@ -467,7 +451,6 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'newer:jscs',
     'test',
     'build'
   ]);

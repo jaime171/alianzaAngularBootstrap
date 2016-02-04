@@ -25,7 +25,8 @@ angular
       })
       .when('/infrastructure', {
         templateUrl: 'views/infrastructure.html',
-        controller: 'MainCtrl'
+        controller: 'InfraCtrl',
+        controllerAs: 'infra'
       })
       .when('/location', {
       	templateUrl: 'views/location.html',
@@ -40,9 +41,7 @@ angular
       	controller: 'MainCtrl',
       	controllerAs: 'contact'
       })
-      .when('/404', {
-        templateUrl: '/404.html',
-      }).otherwise({
-        redirectTo: '/404'
+      .otherwise({
+        redirectTo: '/'
       });
   });
